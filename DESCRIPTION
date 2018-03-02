@@ -1,0 +1,10 @@
+Package: stata2r
+Title: Translate Stata to R
+Version: 0.0.0.9000
+Authors@R: person("Sean", "Craig", email = "sean.craig@pitt.edu", role = c("aut", "cre"))
+Description: This package includes functions for translating Stata instructions into executable R code as painlessly as possible. The main function is stata2r(), which allows the user to execute indivual Stata instructions.
+Depends: R (>= 3.4.3)
+License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.txt)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
