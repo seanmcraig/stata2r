@@ -3,10 +3,10 @@ This R package contains functions for translating Stata instructions into execut
 
 ## Current functionality
 `stata2r` is compatible with the following Stata commands:
-* `cd`, change working directory
-* `clear`, clear data from memory.
-* `pwd`, print working directory
+* `cd`: change working directory
+* `clear`: clear data from memory.
+* `pwd`: print working directory
 
 `stata2r` is partially compatible with the following Stata commands:
-* `use`, load Stata-formatted data files into memory
+* `use`: load Stata-formatted data files into memory
   * Loading full `.dta` is currently supported (e.g., `use "data.dta"`). Loading subsets of data is not supported (e.g., `use x y using "data.dta"`). Loading Stata variable labels is not supported; the command functions as if theuser specifies the `nolabel` Stata option
