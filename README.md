@@ -3,8 +3,10 @@ stata2r
 This R package contains functions for translating Stata instructions into executable R code as painlessly as possible. The main function is `stata2r()`, which allows the user to execute individual stata instructions.
 
 ## Who Should Use stata2r?
-* People who prefer Stata syntax for certain functions
-* People who would like to learn R gradually while maintaining a familiar workflow.
+* Users who want to use common Stata functions but lack a current license.
+* Primary R users who prefer Stata syntax for certain common functions (e.g. data manipulation, or OLS regression).
+* Primary Stata users who would like to learn R gradually while maintaining a familiar workflow.
+* Primary Stata users who need to collaborate with R users.
 
 ## Usage
 The main function, `stata2r()`, allows the user to a line of Stata code as a string (in single quotes). The package will parse the string, identify corresponding R functions, and output both the translated code and its result. For example,
