@@ -14,6 +14,5 @@ This function translates common Stata instructions into R and executes the resul
 }
 \examples{
 stata2r('pwd')
-
 }
 \keyword{stata}
