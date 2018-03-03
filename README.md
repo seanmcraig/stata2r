@@ -41,4 +41,4 @@ Command | Description/Notes
 #### stata2r is partially compatible with the following Stata commands:
 Command | Description/Notes
 --- | ---
-`use` | Loading full `.dta` is currently supported (e.g., `use "data.dta"`). Loading subsets of data is not supported (e.g., `use x y using "data.dta"`). Loading Stata variable labels is not supported; the command functions as if theuser specifies the `nolabel` Stata option.
+`use` | Loading full `.dta` is currently supported (e.g., `use "data.dta"`). Loading subsets of data is not supported (e.g., `use x y using "data.dta"`). Loading Stata variable labels is not supported; the command functions as if the user specifies the `nolabel` option in Stata.
