@@ -44,6 +44,7 @@ A list of Stata commands that work with *stata2r* appears at the bottom of this 
 
 ## Supported Stata Commands
 The following Stata commands are at least partially supported:
+
 Command | Notes
 --- | ---
 `cd` | Fully supported.
