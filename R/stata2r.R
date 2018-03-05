@@ -50,7 +50,7 @@ s2r <- function(input){
   if(cmd == "cd"){
     path <- paste(cvector$v1[2:loc_end], collapse=" ")
     setwd(path)
-    verb <- paste("setwd(",path,")")
+    verb <- paste('setwd("',path,'")')
     print(noquote(verb))
   }
   
@@ -137,12 +137,15 @@ s2r <- function(input){
     expression <- gsub("=","<-", paste0(cvector$v1[2:loc_stop], collapse=""))
     expression_2 <- sub("^[^<]*","",expression)
     
-    ifrowid <- paste0(loc_if+1,":",loc_ifstop,collapse="")
-    ifverb <- paste0("cvector$v1[",ifrowid,"]", collapse="")
-    inrowid <- paste0(loc_in+1,":",loc_instop,collapse="")
-    inverb <- paste0("cvector$v1[",inrowid,"]", collapse="")
-    if(length(loc_if)>0){if_exp <- eval(parse(text=ifverb))}
+    
+    if(length(loc_if)>0){
+      ifrowid <- paste0(loc_if+1,":",loc_ifstop,collapse="")
+      ifverb <- paste0("cvector$v1[",ifrowid,"]", collapse="")
+      if_exp <- eval(parse(text=ifverb))
+    }
     if(length(loc_in)>0){
+      inrowid <- paste0(loc_in+1,":",loc_instop,collapse="")
+      inverb <- paste0("cvector$v1[",inrowid,"]", collapse="")
       in_exp <- eval(parse(text=inverb))
       in_exp <- gsub("f","1",in_exp)
       in_exp <- gsub("l",NROW(mydata),in_exp)
@@ -207,4 +210,3 @@ s2r <- function(input){
   }
   # Remove general objects
 } 
-
