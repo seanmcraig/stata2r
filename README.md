@@ -1,7 +1,7 @@
 # stata2r
 
 ## Summary
-*stata2r* is an R package that allows users to translate Stata instructions into executable R code on the fly.
+*stata2r* is an R package that allows users to translate Stata instructions into executable R code on the fly. It is currently in an alpha stage of development.
 
 ## Overview
 *stata2r* in an add-on package for R. It contains functions for parsing strings of Stata code and executing equivalent instructions in R. The main function, `s2r()`, allows the user to execute commmon Stata command-line instructions. The package serves two main groups of users:
