@@ -37,7 +37,7 @@ As Stata only permits one active data set, Stata syntax does not permit the user
 mydata <- otherdata
 ~~~~
 
-Please note that *stata2r* assumes that user input is valid Stata code. Invalid code may produce opaque error messages referencing local variables temporarily created by the package functions. If you receive an error, a good first step is to make sure your Stata input contains no errors.
+Please note that *stata2r* presumes that user input is valid Stata code. Invalid code may produce opaque error messages referencing local variables temporarily created by the package functions. If you receive an error, a good first step is to make sure your Stata input contains no errors.
 
 A list of Stata commands that work with *stata2r* appears at the bottom of this README.
 
